@@ -25,8 +25,21 @@ JNest.<b>apply</b>(object, function)
 
 #### Example 
 
-In this example I am going to sum together two values at each node
+In this example I am going to create a new value with key "sum" at each node which will be the sum of the values under "key1" and "key3" at each node.
 
 ```js
 var transformedData = JNest.apply(data, function(d) { d.sum = d.key1 + d.key3 });
 ```
+Output:
+```json
+{
+  "Array1": [],
+  "Array2": [],
+  "Id": 1,
+  "key1": 23,
+  "key2": "global",
+  "key3": 42,
+  "sum": 65
+ } 
+```
+
