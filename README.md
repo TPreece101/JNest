@@ -91,7 +91,7 @@ This function cycles through the tree and deletes the property with the key that
 
 #### Syntax
 
-JNest.<b>deleteProperty</b>(object)
+JNest.<b>deleteProperty</b>(object, key)
 
 #### Example 
 
@@ -102,3 +102,79 @@ var dataWithoutParent = JNest.deleteProperty(data, "parent");
 Example Output Snippet:
 
 This would be the same as the original input.
+
+### Add Level Count
+
+This function cycles through the tree and adds a "level" property to each node which tells you what level of the tree that node is on, root node is 0 and all it's children 1 and their children 2 etc. This function adds the parent property at each node for it's own use, if leaveParent = "Y" then it will leave the parent property at each node, if it is anything else or excluded as below the parent property will be deleted.   
+
+#### Syntax
+
+JNest.<b>addLevelCount</b>(object, leaveParent)
+
+#### Example 
+
+```js
+var dataWithLevels = JNest.addLevelCount(data);
+```
+
+Example Output Snippet:
+
+```json
+{
+  "Id": 1,
+  "key1": 23,
+  "key2": "global",
+  "key3": 42,
+  "level": 0,
+  "Array1": [
+    {
+      "Id": 2,
+      "key1": 75,
+      "key2": "frontier",
+      "key3": 93,
+      "level": 1,
+      "Array1": [
+        {
+          "Id": 3,
+          "key1": 32,
+          "key2": "binding",
+          "key3": 68,
+          "level": 2,
+          "Array1": [
+            {
+              "Id": 4,
+              "key1": 35,
+              "key2": "pilot",
+              "key3": 62,
+              "level": 3,
+              "Array1": [
+                {
+                  "Id": 5,
+                  "key1": 53,
+                  "key2": "wolf",
+                  "key3": 12,
+                  "level": 4
+                },
+                {
+                  "Id": 6,
+                  "key1": 30,
+                  "key2": "blend",
+                  "key3": 80,
+                  "level": 4
+                },
+                {
+                  "Id": 7,
+                  "key1": 37,
+                  "key2": "noir",
+                  "key3": 25,
+                  "level": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
