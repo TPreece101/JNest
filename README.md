@@ -181,7 +181,7 @@ Example Output Snippet:
 ```
 ### Search By Key Value
 
-This function cycles through the tree, finds all of the nodes where a specified key equals a specified value and returns these nodes in an array.
+This function cycles through the tree, finds all of the nodes where a specified key equals a specified value and returns these nodes in an array. This could be used to find all of the nodes on a certain level or find a node by it's ID. Due to the properties of Javascript any changes made to the resulting array will make changes to those nodes in the original object, this can be very useful.
 
 #### Syntax
 
@@ -240,3 +240,23 @@ Example Output Snippet:
   }
 ]
 ```
+
+### Search By Key
+
+This function cycles through the tree, finds all of the nodes that has a specified property and returns these nodes in an array. Due to the properties of Javascript any changes made to the resulting array will make changes to those nodes in the original object, this can be very useful.
+
+#### Syntax
+
+JNest.<b>searchByKey</b>(object, key)
+
+#### Example 
+
+In this example, I am going to use the Search By Key function to find all of the nodes that have a property "key4".  
+
+```js
+var resultArray = JNest.searchByKey(data, 'key4');
+```
+
+Example Output Snippet:
+
+This will be similar to the previous function but would be a lot longer in this case due to all of the arrays of children so I see no need in showing it here.
