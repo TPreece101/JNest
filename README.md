@@ -264,6 +264,7 @@ This will be similar to the previous function but would be a lot longer in this 
 ## License 
 
 The following licence is also displayed above the code in the js file.
+
 Copyright (c) 2017, Thomas Preece
 All rights reserved.
 
