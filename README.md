@@ -79,7 +79,7 @@ Example Output Snippet:
               "key2": "flavour",
               "key3": 18,
               "parent": {},
-              "Array1": ['...']
+              "Array1": []
             }
        }],
  } 
