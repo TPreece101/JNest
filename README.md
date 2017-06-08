@@ -17,6 +17,10 @@ I will get round to writing a node package when I find the time.
 
 * [Apply](#apply)
 * [Add Parent Property](#add-parent-property)
+* [Delete Property](#delete-property)
+* [Add Level Count](#add-level-count)
+* [Search By Key Value](#search-by-key-value)
+* [Search By Key](#search-by-key)
 
 ### Apply
 
