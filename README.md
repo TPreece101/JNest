@@ -38,8 +38,8 @@ Example Output Node (root):
   "key2": "global",
   "key3": 42,
   "sum": 65,
-  "Array1": [...],
-  "Array2": [...],
+  "Array1": [],
+  "Array2": [],
  } 
 ```
 
