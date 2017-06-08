@@ -16,7 +16,7 @@ I will get round to writing a node package when I find the time.
 ## Usage With Examples 
 
 * [Apply](#apply)
-* [Add Parent Property](#add parent property)
+* [Add Parent Property](#add-parent-property)
 
 ### Apply
 
