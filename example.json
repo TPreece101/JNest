@@ -1,0 +1,76 @@
+{
+  "Id": 1,
+  "key1": 23,
+  "key2": "global",
+  "key3": 42,
+  "Array1": [
+    {
+      "Id": 2,
+      "key1": 75,
+      "key2": "frontier",
+      "key3": 93,
+      "key4": "baptism",
+      "Array1": [
+        {
+          "Id": 3,
+          "key1": 32,
+          "key2": "binding",
+          "key3": 68,
+          "key4": "crypt",
+          "Array1": [
+            {
+              "Id": 4,
+              "key1": 35,
+              "key2": "pilot",
+              "key3": 62,
+              "key4": "apartment",
+              "Array1": [
+                {
+                  "Id": 5,
+                  "key1": 53,
+                  "key2": "wolf",
+                  "key3": 12,
+                  "key4": "duke"
+                },
+                {
+                  "Id": 6,
+                  "key1": 30,
+                  "key2": "blend",
+                  "key3": 80
+                },
+                {
+                  "Id": 7,
+                  "key1": 37,
+                  "key2": "noir",
+                  "key3": 25
+                }
+              ]
+            },
+            {
+              "Id": 8,
+              "key1": 58,
+              "key2": "hop",
+              "key3": 14
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Array2": [
+    {
+      "Id": 9,
+      "key1": 39,
+      "key2": "flavour",
+      "key3": 18,
+      "Array1": [
+        {
+          "Id": 10,
+          "key1": 90,
+          "key2": "clinic",
+          "key3": 10
+        }
+      ]
+    }
+  ]
+}
