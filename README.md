@@ -86,3 +86,19 @@ Example Output Snippet:
 ```
 
 ### Delete Property
+
+This function cycles through the tree and deletes the property with the key that you define, this is useful for removing the parent property if you want to stingify your object.  
+
+#### Syntax
+
+JNest.<b>deleteProperty</b>(object)
+
+#### Example 
+
+```js
+var dataWithoutParent = JNest.deleteProperty(data, "parent");
+```
+
+Example Output Snippet:
+
+This would be the same as the original input.
