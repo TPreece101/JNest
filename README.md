@@ -17,4 +17,6 @@ I will get round to writing a node package when I find the time.
 
 ### Apply
 
+This function is used to apply a function of your choice to each node in the nested object, this means that you have a lot of freedom to perform custom operations, if you find yourself doing one operation in particular alot then leave a comment and I can include a wrapper in the next release.  
+
 #### Syntax
