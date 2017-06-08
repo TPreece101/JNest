@@ -2,4 +2,4 @@
 
 ## Introduction
 
-JNest is a useful collection of functions for traversing and performing operations on nested JSON objects, this library is particularly useful when dealing with tree diagrams or if you are working with nested data of any kind.
+JNest is a useful collection of functions for traversing and performing operations on nested JSON objects, this library is particularly useful when dealing with tree diagrams or if you are working with nested data of any kind. For the examples in this documentation I will be using the.
