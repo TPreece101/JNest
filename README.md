@@ -2,7 +2,7 @@
 
 ## Introduction
 
-JNest is a useful collection of functions for traversing and performing operations on nested JSON objects, this library is particularly useful when dealing with tree diagrams or if you are working with nested data of any kind. For the examples in this documentation I will be using the [example.json](https://github.com/TPreece101/JNest/blob/master/example.json) file which I created for this purpose. The short version of the license is that you are able to include this library in any software you like as long as you keep the copyright notice in the js file.
+JNest is a useful collection of functions for traversing and performing operations on nested JSON objects, this library is particularly useful when dealing with tree diagrams or if you are working with nested data of any kind. For the examples in this documentation I will be using the [example.json](https://github.com/TPreece101/JNest/blob/master/example.json) file which I created for this purpose. The short version of the license is that you are able to include this library in any software you like as long as you keep the copyright notice in the js file. This library is pure Javascript and has no dependencies!
 
 ## Installation
 
