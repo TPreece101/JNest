@@ -30,7 +30,7 @@ In this example I am going to create a new value with key "sum" at each node whi
 ```js
 var transformedData = JNest.apply(data, function(d) { d.sum = d.key1 + d.key3 });
 ```
-Output:
+Example Output Node (root):
 ```json
 {
   "Array1": [],
