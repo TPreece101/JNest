@@ -33,13 +33,54 @@ var transformedData = JNest.apply(data, function(d) { d.sum = d.key1 + d.key3 })
 Example Output Node (root):
 ```json
 {
-  "Array1": [],
-  "Array2": [],
   "Id": 1,
   "key1": 23,
   "key2": "global",
   "key3": 42,
-  "sum": 65
+  "sum": 65,
+  "Array1": [...],
+  "Array2": [...],
  } 
 ```
 
+### Add Parent Property
+
+This function cycles through the nested data and adds a "parent" property to each node which returns a reference to the node's parent, this can be useful if you later want to change properties based on a node's parent. Be wary though as this creates circular references in your object so if you wish to convert it to a string later then you must remove this property first.
+
+#### Syntax
+
+JNest.<b>addParentProperty</b>(object)
+
+#### Example 
+
+```js
+var dataWithParent = JNest.addParentProperty(data);
+```
+
+Example Output Snippet:
+
+```json
+{
+  "Id": 9,
+  "key1": 39,
+  "key2": "flavour",
+  "key3": 18,
+  "parent": Object,
+  "Array1": [
+      {
+        "Id": 10,
+        "key1": 90,
+        "key2": "clinic",
+        "key3": 10,
+        "parent": 
+            {
+              "Id": 9,
+              "key1": 39,
+              "key2": "flavour",
+              "key3": 18,
+              "parent": Object,
+              "Array1": [...]
+            }
+       }],
+ } 
+```
