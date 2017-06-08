@@ -94,6 +94,7 @@ This function cycles through the tree and deletes the property with the key that
 JNest.<b>deleteProperty</b>(object, key)
 
 #### Example 
+In this example I am going to use it to remove the parent property and therfore removing the circular references.
 
 ```js
 var dataWithoutParent = JNest.deleteProperty(data, "parent");
@@ -177,4 +178,65 @@ Example Output Snippet:
     }
   ]
 }
+```
+### Search By Key Value
+
+This function cycles through the tree, finds all of the nodes where a specified key equals a specified value and returns these nodes in an array.
+
+#### Syntax
+
+JNest.<b>searchByKeyValue</b>(object, key, value)
+
+#### Example 
+
+In this example, I am going to use the Search By Key Value function to find all of the nodes on level 3. Assume that the Add Level Count function has already been applied. 
+
+```js
+var resultArray = JNest.searchByKeyValue(data, 'level', 3);
+```
+
+Example Output Snippet:
+
+```json
+[
+  {
+    "Id": 4,
+    "key1": 35,
+    "key2": "pilot",
+    "key3": 62,
+    "key4": "apartment",
+    "Array1": [
+      {
+        "Id": 5,
+        "key1": 53,
+        "key2": "wolf",
+        "key3": 12,
+        "key4": "duke",
+        "level": 4
+      },
+      {
+        "Id": 6,
+        "key1": 30,
+        "key2": "blend",
+        "key3": 80,
+        "level": 4
+      },
+      {
+        "Id": 7,
+        "key1": 37,
+        "key2": "noir",
+        "key3": 25,
+        "level": 4
+      }
+    ],
+    "level": 3
+  },
+  {
+    "Id": 8,
+    "key1": 58,
+    "key2": "hop",
+    "key3": 14,
+    "level": 3
+  }
+]
 ```
