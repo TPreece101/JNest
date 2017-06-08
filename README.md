@@ -27,6 +27,6 @@ JNest.<b>apply</b>(object, function)
 
 In this example I am going to sum together two values at each node
 
-```html
+```js
 var transformedData = JNest.apply(data, function(d) { d.sum = d.key1 + d.key3 });
 ```
