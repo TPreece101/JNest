@@ -22,3 +22,11 @@ This function is used to apply a function of your choice to each node in the nes
 #### Syntax
 
 JNest.<b>apply</b>(object, function)
+
+#### Example 
+
+In this example I am going to sum together two values at each node
+
+```html
+var transformedData = JNest.apply(data, function(d) { d.sum = d.key1 + d.key3 });
+```
