@@ -84,3 +84,5 @@ Example Output Snippet:
        }],
  } 
 ```
+
+### Delete Property
