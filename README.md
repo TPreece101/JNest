@@ -65,7 +65,7 @@ Example Output Snippet:
   "key1": 39,
   "key2": "flavour",
   "key3": 18,
-  "parent": Object,
+  "parent": {},
   "Array1": [
       {
         "Id": 10,
@@ -78,7 +78,7 @@ Example Output Snippet:
               "key1": 39,
               "key2": "flavour",
               "key3": 18,
-              "parent": Object,
+              "parent": {},
               "Array1": [...]
             }
        }],
