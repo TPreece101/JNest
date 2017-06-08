@@ -14,3 +14,7 @@ Copy the [JNest.v1.min.js](https://raw.githubusercontent.com/TPreece101/JNest/ma
 I will get round to writing a node package when I find the time.
 
 ## Usage With Examples 
+
+### Apply
+
+#### Syntax
